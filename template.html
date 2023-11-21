@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creare un template</title>
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        /*border-collapse sceglie come comportarsi quando due bordi sono appiccicati*/
+      }
+
+      td {
+        border: 1px solid black;
+        padding: 5px;
+        min-width: 80px;
+      }
+
+      th {
+        border: 1px solid black;
+        padding: 5px;
+        min-width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Come creare un template per i post</h1>
+      <p>di Mario Rossi - pubblicato il 25-10-2020</p>
+      <h2>le varie aree saranno divise in:</h2>
+      <ul>
+        <li>contenuti di intestazione del tag;</li>
+        <li>contenuti centrali del tag &lt;MAIN&gt;;</li>
+        <li>contenuti fine pagina, &lt;FOOTER&gt;;</li>
+      </ul>
+      <h2>
+        Il testo dell'articolo sarà formattato per indentificare tutte le parti
+        da selezionare con i CSS:
+      </h2>
+      <ol>
+        <li>
+          Progettare il markup assegnando ad ogni testo il tag appropriato
+        </li>
+        <li>
+          Scrivere l'HTML dei tag esterni e interni dall'alto verso il basso
+        </li>
+        <li>Applicare gli stili CSS</li>
+      </ol>
+    </header>
+
+    <main>
+      <h3>Diffusione dei CSS:</h3>
+      <table>
+        <thead>
+          <!--intestazione tabella:inserisco titolo e nomi dei campi-->
+          <caption>
+            Utilizzo dei CSS
+          </caption>
+          <tr>
+            <th>Anno</th>
+            <th>% di utilizzo</th>
+            <th>Supporto browser</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--dati veri e propri-->
+          <tr>
+            <td>2000</td>
+            <td>20%</td>
+            <td>17%</td>
+          </tr>
+
+          <tr>
+            <td>2002</td>
+            <td>35%</td>
+            <td>22%</td>
+          </tr>
+          <tr>
+            <td>2004</td>
+            <td>45%</td>
+            <td>42%</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>80%</td>
+            <td>51%</td>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>100%</td>
+            <td>72%</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Un test di validazione potrà essere fatto tramite il tool online
+        <a href="">LINK ESTERNO</a>. Una volta ottimizzato tutto saremo veri
+        develovers come loro:
+      </p>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/LAvZ-gUqlnk?si=oxI7p5zLdRyzMFPX"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <h4>
+        Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra
+        newsletter
+      </h4>
+      <form>
+        <label for="email">Inserisci la tua mail</label>
+        <input id="email" type="text" />
+        <button>Iscriviti</button>
+      </form>
+    </main>
+    <hr />
+    <footer>
+      <h5>Articoli correlati</h5>
+      <p>Validare il codice HTML</p>
+      <p>Categoria:develop</p>
+      <p>Data: 18-09-2020</p>
+      <br />
+      <p>Correggere la sintassi</p>
+      <p>Categoria:develop</p>
+      <p>16-9-20</p>
+      <br />
+      <p>Meno kb nella pagina</p>
+      <p>Categoria:ottimizzazione</p>
+      <p>30-9-22</p>
+      <br />
+      <p>Blog Epicode &copy;2023</p>
+      <address>
+        via Luigi Einaudi 2 - Milano. P. IVA 00112233.
+        <a href="">info@epicode.school</a>
+      </address>
+    </footer>
+  </body>
+</html>
